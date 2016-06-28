@@ -14,11 +14,17 @@ $gray: #666;
 $lightGray: #eee;
 $white: #fff;
 
+$theme-color: $blue;
+
+$post-date-color: #9a9a9a;
+
 // Font stacks
 $helvetica: Helvetica, Arial, sans-serif;
 $helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $georgia: Georgia, serif;
-
+$font-serif: "PT Serif", Georgia, "Times New Roman", serif;
+$font-sans: "PT Sans", Helvetica, Arial, sans-serif;
+$font-font-awesome: FontAwesome;
 // Mobile breakpoints
 @mixin mobile {
   @media screen and (max-width: 640px) {

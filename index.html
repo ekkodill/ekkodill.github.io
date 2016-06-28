@@ -13,6 +13,7 @@ layout: default
       </div>
 
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+      <span class="entry-categories post-tag"><a href="{{ site.url }}/{{ post.category-url }}/" rel="category">{{ post.category }}</a></span>
     </article>
   {% endfor %}
 </div>

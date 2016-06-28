@@ -30,6 +30,14 @@ body {
   width: 100%;
 }
 
+.archive-title {
+  text-transform: capitalize;
+}
+
+.current {
+  color: $blue;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: $helveticaNeue;
   color: $darkerGray;
@@ -285,5 +293,6 @@ footer {
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
+@import "tag";
 @import "highlights";
 @import "svg-icons";

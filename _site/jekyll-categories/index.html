@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>How to add categories on jekyll – Dr. Who? – IT Dr. from Somewhere</title>
+
+        <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="1. Create "category.html" in the _layouts folder.
+
+" />
+    <meta property="og:description" content="1. Create "category.html" in the _layouts folder.
+
+" />
+    
+    <meta name="author" content="Dr. Who?" />
+
+    
+    <meta property="og:title" content="How to add categories on jekyll" />
+    <meta property="twitter:title" content="How to add categories on jekyll" />
+    
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+    <link rel="alternate" type="application/rss+xml" title="Dr. Who? - IT Dr. from Somewhere" href="/feed.xml" />
+    
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+  </head>
+
+  <body>
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="/" class="site-avatar"><img src="https://raw.githubusercontent.com/ekkodill/ekkodill.github.io/master/images/jekyll-logo.png" /></a>
+
+          <div class="site-info">
+            <h1 class="site-name"><a href="/">Dr. Who?</a></h1>
+            <p class="site-description">IT Dr. from Somewhere</p>
+          </div>
+
+          <nav>
+            <a href="/" >Blog</a>
+            <a href="/categories" >Categories</a>
+            <a href="/about" >About</a>
+
+
+          </nav>
+        </header>
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      <article class="post">
+  <h1>How to add categories on jekyll</h1>
+
+  <div class="entry">
+    <p><code class="highlighter-rouge">1. Create "category.html" in the _layouts folder.</code></p>
+
+<div class="language-liquid highlighter-rouge"><pre class="highlight"><code>
+---
+layout: default
+type: archive
+---
+&lt;div class="archive-description"&gt;
+  &lt;h1 class="archive-title"&gt;<span class="p">{{</span><span class="w"> </span><span class="nv">page</span><span class="p">.</span><span class="nv">category</span><span class="w"> </span><span class="p">}}</span> Archive&lt;/h1&gt;
+  <span class="p">{{</span><span class="w"> </span><span class="nv">content</span><span class="w"> </span><span class="p">}}</span>
+&lt;/div&gt;
+
+&lt;div class="wrap"&gt;
+<span class="p">{%</span><span class="w"> </span><span class="kr">if</span><span class="w"> </span><span class="nv">site</span><span class="p">.</span><span class="nv">categories</span><span class="p">[</span><span class="nv">page</span><span class="p">.</span><span class="nv">category</span><span class="p">]</span><span class="w"> </span><span class="p">%}</span>
+  &lt;div class="group-year"&gt;
+    <span class="p">{%</span><span class="w"> </span><span class="nt">for</span><span class="w"> </span>post<span class="w"> </span>in<span class="w"> </span>site.categories[page.category]<span class="w"> </span><span class="p">%}</span>
+      <span class="p">{%</span><span class="w"> </span><span class="nt">capture</span><span class="w"> </span><span class="na">this_year</span><span class="w"> </span><span class="p">%}{{</span><span class="w"> </span><span class="nv">post</span><span class="p">.</span><span class="nv">date</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="nf">date</span><span class="p">:</span><span class="w"> </span><span class="s2">"%Y"</span><span class="w"> </span><span class="p">}}{%</span><span class="w"> </span><span class="nt">endcapture</span><span class="w"> </span><span class="p">%}</span>
+      <span class="p">{%</span><span class="w"> </span><span class="kr">unless</span><span class="w"> </span><span class="nv">year</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="nv">this_year</span><span class="w"> </span><span class="p">%}</span>
+        <span class="p">{%</span><span class="w"> </span><span class="nt">assign</span><span class="w"> </span><span class="nv">year</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">this_year</span><span class="w"> </span><span class="p">%}</span>
+        &lt;p&gt;<span class="p">{{</span><span class="w"> </span><span class="nv">year</span><span class="w"> </span><span class="p">}}</span>&lt;/p&gt;
+      <span class="p">{%</span><span class="w"> </span><span class="kr">endunless</span><span class="w"> </span><span class="p">%}</span>
+      &lt;article&gt;
+        &lt;h3&gt;&lt;a href="<span class="p">{{</span><span class="w"> </span><span class="nv">site</span><span class="p">.</span><span class="nv">url</span><span class="w"> </span><span class="p">}}{{</span><span class="w"> </span><span class="nv">post</span><span class="p">.</span><span class="nv">url</span><span class="w"> </span><span class="p">}}</span>"&gt;<span class="p">{{</span><span class="w"> </span><span class="nv">post</span><span class="p">.</span><span class="nv">title</span><span class="w"> </span><span class="p">}}</span>&lt;/a&gt;&lt;/h3&gt;
+        &lt;time&gt;
+          &lt;span class="month"&gt;<span class="p">{{</span><span class="w"> </span><span class="nv">post</span><span class="p">.</span><span class="nv">date</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="nf">date</span><span class="p">:</span><span class="w"> </span><span class="s2">"%b"</span><span class="w"> </span><span class="p">}}</span>&lt;/span&gt;
+          &lt;span class="day"&gt;<span class="p">{{</span><span class="w"> </span><span class="nv">post</span><span class="p">.</span><span class="nv">date</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="nf">date</span><span class="p">:</span><span class="w"> </span><span class="s2">"%d"</span><span class="w"> </span><span class="p">}}</span>&lt;/span&gt;
+          &lt;span class="year"&gt;<span class="p">{{</span><span class="w"> </span><span class="nv">post</span><span class="p">.</span><span class="nv">date</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="nf">date</span><span class="p">:</span><span class="w"> </span><span class="s2">"%Y"</span><span class="w"> </span><span class="p">}}</span>&lt;/span&gt;
+        &lt;/time&gt;
+      &lt;/article&gt;
+    <span class="p">{%</span><span class="w"> </span><span class="nt">endfor</span><span class="w"> </span><span class="p">%}</span>
+  &lt;/div&gt;
+<span class="p">{%</span><span class="w"> </span><span class="kr">else</span><span class="w"> </span><span class="p">%}</span>
+  &lt;p&gt;There are no posts in this category.&lt;/p&gt;
+<span class="p">{%</span><span class="w"> </span><span class="kr">endif</span><span class="w"> </span><span class="p">%}</span>
+&lt;/div&gt;
+
+</code></pre>
+</div>
+
+<p><code class="highlighter-rouge">2. Create "post-categories.html" in the _inclues folder folder.</code></p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"entry-categories"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"http://127.0.0.1:4000/webdev/"</span> <span class="na">rel=</span><span class="s">"category"</span><span class="nt">&gt;</span>webdev<span class="nt">&lt;/a&gt;&lt;/span&gt;</span>
+</code></pre>
+</div>
+
+<p><code class="highlighter-rouge">3. Create a new folder in the root directory called "_pages"</code></p>
+
+<p><code class="highlighter-rouge">4. Create a new file inside "_pages" dir called e.g "fishing.md"</code></p>
+
+<div class="language-liquid highlighter-rouge"><pre class="highlight"><code>---
+layout: category
+title: How to fish
+description: How to's for fishing
+category: fishing
+permalink: /fishing/
+---
+Fishing category with how to's for fishing
+</code></pre>
+</div>
+
+<p><code class="highlighter-rouge">5. Create a new post and include this</code></p>
+
+<div class="language-liquid highlighter-rouge"><pre class="highlight"><code>category: fishing
+category-url: fishing
+</code></pre>
+</div>
+
+<p><code class="highlighter-rouge">6. Include this in _config.yml</code></p>
+
+<div class="language-liquid highlighter-rouge"><pre class="highlight"><code>include: ["_pages"]
+</code></pre>
+</div>
+
+<p><code class="highlighter-rouge">7. url in _config.yml needs to be either proper for local dev or published</code></p>
+
+<div class="language-liquid highlighter-rouge"><pre class="highlight"><code>url: http://127.0.0.1:4000 or url: username.github.io
+</code></pre>
+</div>
+
+
+  </div>
+
+  <div class="date">
+    Written on June 28, 2016   
+  </div>
+
+
+<span class="entry-categories post-tag"><a href="http://127.0.0.1:4000/webdev/" rel="category">webdev</a></span>
+
+
+
+  
+</article>
+
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          
+
+
+
+<a href="https://github.com/ekkodill/ekkodill.github.io"><i class="svg-icon github"></i></a>
+
+
+
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+  </body>
+</html>
