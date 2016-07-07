@@ -13,9 +13,9 @@ layout: default
     Written on {{ page.date | date: "%B %e, %Y" }}   
   </div>
 
-
-{% include post-categories.html %}
-
+{% if post.categories %} 
+	{% include post-categories.html %}
+{% endif %}
 
 
   {% include disqus.html %}

@@ -6,14 +6,26 @@ layout: default
   {% for post in site.posts %}
     <article class="post">
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-
+      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> </h1>
+		
       <div class="entry">
-        {{ post.excerpt }}
+        {{ post.excerpt | markdownify }}
       </div>
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-      <span class="entry-categories post-tag"><a href="{{ site.url }}/{{ post.category-url }}/" rel="category">{{ post.category }}</a></span>
+      <i class="fa fa-plus-circle"  aria-hidden="true"></i><a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+
+      <!-- <span class="entry-categories post-tag"><a href="{{ site.url }}/{{ post.category-url }}/" rel="category">{{ post.category }}</a></span> -->
+
+<!-- <span class="post-date">{{ post.date | date_to_string }}</span> -->
+
+    
+    {% if post.categories %} 
+	    {% for category in post.categories %}
+    		| <a href="{{ site.url }}/{{ post.category-url }}/" rel="category" class="post-tag">{{ category }}</a>
+    	{% endfor %}
+	{% endif %}
+
+
     </article>
   {% endfor %}
 </div>

@@ -305,12 +305,16 @@ nav a {
   font-size: 22px;
   font-style: italic;
 }
+.post .fa {
+  margin-right: .2em;
+}
 .post .comments {
   margin-top: 10px;
 }
 .post .read-more {
   text-transform: uppercase;
-  font-size: 15px;
+  font-size: 18px;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 .wrapper-footer {
@@ -342,6 +346,7 @@ footer {
 }
 .post-tag:hover {
   text-decoration: none;
+  background: #4183C4;
   color: #fff;
 }
 

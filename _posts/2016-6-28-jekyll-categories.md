@@ -45,7 +45,7 @@ type: archive
 </div>
 {% endraw %}
 ```
-
+<!-- more -->
 `2. Create "post-categories.html" in the _inclues folder folder.`
 
 ```html

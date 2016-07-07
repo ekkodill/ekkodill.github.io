@@ -54,43 +54,153 @@
   
     <article class="post">
 
-      <h1><a href="/jekyll-categories/">How to add categories on jekyll</a></h1>
-
+      <h1><a href="/jekyll-categories/">How to add categories on jekyll</a> </h1>
+		
       <div class="entry">
         <p><code class="highlighter-rouge">1. Create "category.html" in the _layouts folder.</code></p>
 
+<div class="language-liquid highlighter-rouge"><pre class="highlight"><code>
+---
+layout: default
+type: archive
+---
+&lt;div class="archive-description"&gt;
+  &lt;h1 class="archive-title"&gt;<span class="p">{{</span><span class="w"> </span><span class="nv">page</span><span class="p">.</span><span class="nv">category</span><span class="w"> </span><span class="p">}}</span> Archive&lt;/h1&gt;
+  <span class="p">{{</span><span class="w"> </span><span class="nv">content</span><span class="w"> </span><span class="p">}}</span>
+&lt;/div&gt;
+
+&lt;div class="wrap"&gt;
+<span class="p">{%</span><span class="w"> </span><span class="kr">if</span><span class="w"> </span><span class="nv">site</span><span class="p">.</span><span class="nv">categories</span><span class="p">[</span><span class="nv">page</span><span class="p">.</span><span class="nv">category</span><span class="p">]</span><span class="w"> </span><span class="p">%}</span>
+  &lt;div class="group-year"&gt;
+    <span class="p">{%</span><span class="w"> </span><span class="nt">for</span><span class="w"> </span>post<span class="w"> </span>in<span class="w"> </span>site.categories[page.category]<span class="w"> </span><span class="p">%}</span>
+      <span class="p">{%</span><span class="w"> </span><span class="nt">capture</span><span class="w"> </span><span class="na">this_year</span><span class="w"> </span><span class="p">%}{{</span><span class="w"> </span><span class="nv">post</span><span class="p">.</span><span class="nv">date</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="nf">date</span><span class="p">:</span><span class="w"> </span><span class="s2">"%Y"</span><span class="w"> </span><span class="p">}}{%</span><span class="w"> </span><span class="nt">endcapture</span><span class="w"> </span><span class="p">%}</span>
+      <span class="p">{%</span><span class="w"> </span><span class="kr">unless</span><span class="w"> </span><span class="nv">year</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="nv">this_year</span><span class="w"> </span><span class="p">%}</span>
+        <span class="p">{%</span><span class="w"> </span><span class="nt">assign</span><span class="w"> </span><span class="nv">year</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">this_year</span><span class="w"> </span><span class="p">%}</span>
+        &lt;p&gt;<span class="p">{{</span><span class="w"> </span><span class="nv">year</span><span class="w"> </span><span class="p">}}</span>&lt;/p&gt;
+      <span class="p">{%</span><span class="w"> </span><span class="kr">endunless</span><span class="w"> </span><span class="p">%}</span>
+      &lt;article&gt;
+        &lt;h3&gt;&lt;a href="<span class="p">{{</span><span class="w"> </span><span class="nv">site</span><span class="p">.</span><span class="nv">url</span><span class="w"> </span><span class="p">}}{{</span><span class="w"> </span><span class="nv">post</span><span class="p">.</span><span class="nv">url</span><span class="w"> </span><span class="p">}}</span>"&gt;<span class="p">{{</span><span class="w"> </span><span class="nv">post</span><span class="p">.</span><span class="nv">title</span><span class="w"> </span><span class="p">}}</span>&lt;/a&gt;&lt;/h3&gt;
+        &lt;time&gt;
+          &lt;span class="month"&gt;<span class="p">{{</span><span class="w"> </span><span class="nv">post</span><span class="p">.</span><span class="nv">date</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="nf">date</span><span class="p">:</span><span class="w"> </span><span class="s2">"%b"</span><span class="w"> </span><span class="p">}}</span>&lt;/span&gt;
+          &lt;span class="day"&gt;<span class="p">{{</span><span class="w"> </span><span class="nv">post</span><span class="p">.</span><span class="nv">date</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="nf">date</span><span class="p">:</span><span class="w"> </span><span class="s2">"%d"</span><span class="w"> </span><span class="p">}}</span>&lt;/span&gt;
+          &lt;span class="year"&gt;<span class="p">{{</span><span class="w"> </span><span class="nv">post</span><span class="p">.</span><span class="nv">date</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="nf">date</span><span class="p">:</span><span class="w"> </span><span class="s2">"%Y"</span><span class="w"> </span><span class="p">}}</span>&lt;/span&gt;
+        &lt;/time&gt;
+      &lt;/article&gt;
+    <span class="p">{%</span><span class="w"> </span><span class="nt">endfor</span><span class="w"> </span><span class="p">%}</span>
+  &lt;/div&gt;
+<span class="p">{%</span><span class="w"> </span><span class="kr">else</span><span class="w"> </span><span class="p">%}</span>
+  &lt;p&gt;There are no posts in this category.&lt;/p&gt;
+<span class="p">{%</span><span class="w"> </span><span class="kr">endif</span><span class="w"> </span><span class="p">%}</span>
+&lt;/div&gt;
+
+</code></pre>
+</div>
+
 
       </div>
 
-      <a href="/jekyll-categories/" class="read-more">Read More</a>
-      <span class="entry-categories post-tag"><a href="http://127.0.0.1:4000/webdev/" rel="category">webdev</a></span>
+      <i class="fa fa-plus-circle"  aria-hidden="true"></i><a href="/jekyll-categories/" class="read-more">Read More</a>
+
+      <!-- <span class="entry-categories post-tag"><a href="http://ekkodill.github.io/webdev/" rel="category">webdev</a></span> -->
+
+<!-- <span class="post-date">28 Jun 2016</span> -->
+
+    
+     
+	    
+    		| <a href="http://ekkodill.github.io/webdev/" rel="category" class="post-tag">webdev</a>
+    	
+	
+
+
     </article>
   
     <article class="post">
 
-      <h1><a href="/New-git-project/">How to add a project to github!</a></h1>
+      <h1><a href="/how-to-get-fit/">How to cut!</a> </h1>
+		
+      <div class="entry">
+        <p>More to come soon!</p>
 
+      </div>
+
+      <i class="fa fa-plus-circle"  aria-hidden="true"></i><a href="/how-to-get-fit/" class="read-more">Read More</a>
+
+      <!-- <span class="entry-categories post-tag"><a href="http://ekkodill.github.io/fitness/" rel="category">fitness</a></span> -->
+
+<!-- <span class="post-date">28 Jun 2016</span> -->
+
+    
+     
+	    
+    		| <a href="http://ekkodill.github.io/fitness/" rel="category" class="post-tag">fitness</a>
+    	
+	
+
+
+    </article>
+  
+    <article class="post">
+
+      <h1><a href="/New-git-project/">How to add a project to github!</a> </h1>
+		
       <div class="entry">
         <p><code class="highlighter-rouge">1. Create a new repo on github.</code></p>
 
+<p><code class="highlighter-rouge">2. git init</code></p>
+
+<p><code class="highlighter-rouge">3. git add .</code></p>
+
+<p><code class="highlighter-rouge">4. git commit -m "init 1"</code></p>
+
+<p><code class="highlighter-rouge">5. git remote add github "repo project url".git</code></p>
+
+<p><code class="highlighter-rouge">6. git remote -v to check</code></p>
+
+<p><code class="highlighter-rouge">7. git pull "repo project url"</code></p>
+
+<p><code class="highlighter-rouge">8. git push github master</code></p>
+
 
       </div>
 
-      <a href="/New-git-project/" class="read-more">Read More</a>
-      <span class="entry-categories post-tag"><a href="http://127.0.0.1:4000/webdev/" rel="category">webdev</a></span>
+      <i class="fa fa-plus-circle"  aria-hidden="true"></i><a href="/New-git-project/" class="read-more">Read More</a>
+
+      <!-- <span class="entry-categories post-tag"><a href="http://ekkodill.github.io/webdev/" rel="category">webdev</a></span> -->
+
+<!-- <span class="post-date">28 Jun 2016</span> -->
+
+    
+     
+	    
+    		| <a href="http://ekkodill.github.io/webdev/" rel="category" class="post-tag">webdev</a>
+    	
+	
+
+
     </article>
   
     <article class="post">
 
-      <h1><a href="/How-to-world/">How to do what?</a></h1>
-
+      <h1><a href="/How-to-world/">How to do what?</a> </h1>
+		
       <div class="entry">
         <p>How to do whatever i need to know.</p>
 
       </div>
 
-      <a href="/How-to-world/" class="read-more">Read More</a>
-      <span class="entry-categories post-tag"><a href="http://127.0.0.1:4000//" rel="category"></a></span>
+      <i class="fa fa-plus-circle"  aria-hidden="true"></i><a href="/How-to-world/" class="read-more">Read More</a>
+
+      <!-- <span class="entry-categories post-tag"><a href="http://ekkodill.github.io//" rel="category"></a></span> -->
+
+<!-- <span class="post-date">28 Jun 2016</span> -->
+
+    
+     
+	    
+	
+
+
     </article>
   
 </div>

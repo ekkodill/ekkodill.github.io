@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.1.6">Jekyll</generator><link href="http://127.0.0.1:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://127.0.0.1:4000/" rel="alternate" type="text/html" /><updated>2016-06-28T19:44:49+02:00</updated><id>http://127.0.0.1:4000/</id><title>Dr. Who?</title><subtitle>IT Dr. from Somewhere</subtitle><entry><title>How to add categories on jekyll</title><link href="http://127.0.0.1:4000/jekyll-categories/" rel="alternate" type="text/html" title="How to add categories on jekyll" /><published>2016-06-28T00:00:00+02:00</published><updated>2016-06-28T00:00:00+02:00</updated><id>http://127.0.0.1:4000/jekyll-categories</id><content type="html" xml:base="http://127.0.0.1:4000/jekyll-categories/">&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;1. Create &quot;category.html&quot; in the _layouts folder.&lt;/code&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.1.6">Jekyll</generator><link href="http://ekkodill.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="http://ekkodill.github.io/" rel="alternate" type="text/html" /><updated>2016-06-28T21:38:52+02:00</updated><id>http://ekkodill.github.io/</id><title>Dr. Who?</title><subtitle>IT Dr. from Somewhere</subtitle><entry><title>How to add categories on jekyll</title><link href="http://ekkodill.github.io/jekyll-categories/" rel="alternate" type="text/html" title="How to add categories on jekyll" /><published>2016-06-28T00:00:00+02:00</published><updated>2016-06-28T00:00:00+02:00</updated><id>http://ekkodill.github.io/jekyll-categories</id><content type="html" xml:base="http://ekkodill.github.io/jekyll-categories/">&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;1. Create &quot;category.html&quot; in the _layouts folder.&lt;/code&gt;&lt;/p&gt;
 
 &lt;div class=&quot;language-liquid highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
 ---
@@ -36,10 +36,10 @@ type: archive
 
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
-
+&lt;!-- more --&gt;
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;2. Create &quot;post-categories.html&quot; in the _inclues folder folder.&lt;/code&gt;&lt;/p&gt;
 
-&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;span&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;entry-categories&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;http://127.0.0.1:4000/webdev/&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;category&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;webdev&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;span&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;entry-categories&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;http://ekkodill.github.io/webdev/&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;category&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;webdev&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
@@ -75,7 +75,41 @@ category-url: fishing
 
 &lt;div class=&quot;language-liquid highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;url: http://127.0.0.1:4000 or url: username.github.io
 &lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;</content><category term="webdev" /><summary>1. Create &quot;category.html&quot; in the _layouts folder.</summary></entry><entry><title>How to add a project to github!</title><link href="http://127.0.0.1:4000/New-git-project/" rel="alternate" type="text/html" title="How to add a project to github!" /><published>2016-06-28T00:00:00+02:00</published><updated>2016-06-28T00:00:00+02:00</updated><id>http://127.0.0.1:4000/New-git-project</id><content type="html" xml:base="http://127.0.0.1:4000/New-git-project/">&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;1. Create a new repo on github.&lt;/code&gt;&lt;/p&gt;
+&lt;/div&gt;</content><category term="webdev" /><summary>1. Create &quot;category.html&quot; in the _layouts folder.
+
+
+---
+layout: default
+type: archive
+---
+&amp;lt;div class=&quot;archive-description&quot;&amp;gt;
+  &amp;lt;h1 class=&quot;archive-title&quot;&amp;gt;{{ page.category }} Archive&amp;lt;/h1&amp;gt;
+  {{ content }}
+&amp;lt;/div&amp;gt;
+
+&amp;lt;div class=&quot;wrap&quot;&amp;gt;
+{% if site.categories[page.category] %}
+  &amp;lt;div class=&quot;group-year&quot;&amp;gt;
+    {% for post in site.categories[page.category] %}
+      {% capture this_year %}{{ post.date | date: &quot;%Y&quot; }}{% endcapture %}
+      {% unless year == this_year %}
+        {% assign year = this_year %}
+        &amp;lt;p&amp;gt;{{ year }}&amp;lt;/p&amp;gt;
+      {% endunless %}
+      &amp;lt;article&amp;gt;
+        &amp;lt;h3&amp;gt;&amp;lt;a href=&quot;{{ site.url }}{{ post.url }}&quot;&amp;gt;{{ post.title }}&amp;lt;/a&amp;gt;&amp;lt;/h3&amp;gt;
+        &amp;lt;time&amp;gt;
+          &amp;lt;span class=&quot;month&quot;&amp;gt;{{ post.date | date: &quot;%b&quot; }}&amp;lt;/span&amp;gt;
+          &amp;lt;span class=&quot;day&quot;&amp;gt;{{ post.date | date: &quot;%d&quot; }}&amp;lt;/span&amp;gt;
+          &amp;lt;span class=&quot;year&quot;&amp;gt;{{ post.date | date: &quot;%Y&quot; }}&amp;lt;/span&amp;gt;
+        &amp;lt;/time&amp;gt;
+      &amp;lt;/article&amp;gt;
+    {% endfor %}
+  &amp;lt;/div&amp;gt;
+{% else %}
+  &amp;lt;p&amp;gt;There are no posts in this category.&amp;lt;/p&amp;gt;
+{% endif %}
+&amp;lt;/div&amp;gt;</summary></entry><entry><title>How to cut!</title><link href="http://ekkodill.github.io/how-to-get-fit/" rel="alternate" type="text/html" title="How to cut!" /><published>2016-06-28T00:00:00+02:00</published><updated>2016-06-28T00:00:00+02:00</updated><id>http://ekkodill.github.io/how-to-get-fit</id><content type="html" xml:base="http://ekkodill.github.io/how-to-get-fit/">&lt;p&gt;More to come soon!&lt;/p&gt;</content><category term="fitness" /><summary>More to come soon!</summary></entry><entry><title>How to add a project to github!</title><link href="http://ekkodill.github.io/New-git-project/" rel="alternate" type="text/html" title="How to add a project to github!" /><published>2016-06-28T00:00:00+02:00</published><updated>2016-06-28T00:00:00+02:00</updated><id>http://ekkodill.github.io/New-git-project</id><content type="html" xml:base="http://ekkodill.github.io/New-git-project/">&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;1. Create a new repo on github.&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;2. git init&lt;/code&gt;&lt;/p&gt;
 
@@ -89,4 +123,18 @@ category-url: fishing
 
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;7. git pull &quot;repo project url&quot;&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;8. git push github master&lt;/code&gt;&lt;/p&gt;</content><category term="webdev" /><summary>1. Create a new repo on github.</summary></entry><entry><title>How to do what?</title><link href="http://127.0.0.1:4000/How-to-world/" rel="alternate" type="text/html" title="How to do what?" /><published>2016-06-28T00:00:00+02:00</published><updated>2016-06-28T00:00:00+02:00</updated><id>http://127.0.0.1:4000/How-to-world</id><content type="html" xml:base="http://127.0.0.1:4000/How-to-world/">&lt;p&gt;How to do whatever i need to know.&lt;/p&gt;</content><summary>How to do whatever i need to know.</summary></entry></feed>
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;8. git push github master&lt;/code&gt;&lt;/p&gt;</content><category term="webdev" /><summary>1. Create a new repo on github.
+
+2. git init
+
+3. git add .
+
+4. git commit -m &quot;init 1&quot;
+
+5. git remote add github &quot;repo project url&quot;.git
+
+6. git remote -v to check
+
+7. git pull &quot;repo project url&quot;
+
+8. git push github master</summary></entry><entry><title>How to do what?</title><link href="http://ekkodill.github.io/How-to-world/" rel="alternate" type="text/html" title="How to do what?" /><published>2016-06-28T00:00:00+02:00</published><updated>2016-06-28T00:00:00+02:00</updated><id>http://ekkodill.github.io/How-to-world</id><content type="html" xml:base="http://ekkodill.github.io/How-to-world/">&lt;p&gt;How to do whatever i need to know.&lt;/p&gt;</content><summary>How to do whatever i need to know.</summary></entry></feed>

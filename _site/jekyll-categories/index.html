@@ -11,8 +11,82 @@
     
     <meta name="description" content="1. Create "category.html" in the _layouts folder.
 
+
+---
+layout: default
+type: archive
+---
+&lt;div class="archive-description"&gt;
+  &lt;h1 class="archive-title"&gt;{{ page.category }} Archive&lt;/h1&gt;
+  {{ content }}
+&lt;/div&gt;
+
+&lt;div class="wrap"&gt;
+{% if site.categories[page.category] %}
+  &lt;div class="group-year"&gt;
+    {% for post in site.categories[page.category] %}
+      {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
+      {% unless year == this_year %}
+        {% assign year = this_year %}
+        &lt;p&gt;{{ year }}&lt;/p&gt;
+      {% endunless %}
+      &lt;article&gt;
+        &lt;h3&gt;&lt;a href="{{ site.url }}{{ post.url }}"&gt;{{ post.title }}&lt;/a&gt;&lt;/h3&gt;
+        &lt;time&gt;
+          &lt;span class="month"&gt;{{ post.date | date: "%b" }}&lt;/span&gt;
+          &lt;span class="day"&gt;{{ post.date | date: "%d" }}&lt;/span&gt;
+          &lt;span class="year"&gt;{{ post.date | date: "%Y" }}&lt;/span&gt;
+        &lt;/time&gt;
+      &lt;/article&gt;
+    {% endfor %}
+  &lt;/div&gt;
+{% else %}
+  &lt;p&gt;There are no posts in this category.&lt;/p&gt;
+{% endif %}
+&lt;/div&gt;
+
+
+
+
 " />
     <meta property="og:description" content="1. Create "category.html" in the _layouts folder.
+
+
+---
+layout: default
+type: archive
+---
+&lt;div class="archive-description"&gt;
+  &lt;h1 class="archive-title"&gt;{{ page.category }} Archive&lt;/h1&gt;
+  {{ content }}
+&lt;/div&gt;
+
+&lt;div class="wrap"&gt;
+{% if site.categories[page.category] %}
+  &lt;div class="group-year"&gt;
+    {% for post in site.categories[page.category] %}
+      {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
+      {% unless year == this_year %}
+        {% assign year = this_year %}
+        &lt;p&gt;{{ year }}&lt;/p&gt;
+      {% endunless %}
+      &lt;article&gt;
+        &lt;h3&gt;&lt;a href="{{ site.url }}{{ post.url }}"&gt;{{ post.title }}&lt;/a&gt;&lt;/h3&gt;
+        &lt;time&gt;
+          &lt;span class="month"&gt;{{ post.date | date: "%b" }}&lt;/span&gt;
+          &lt;span class="day"&gt;{{ post.date | date: "%d" }}&lt;/span&gt;
+          &lt;span class="year"&gt;{{ post.date | date: "%Y" }}&lt;/span&gt;
+        &lt;/time&gt;
+      &lt;/article&gt;
+    {% endfor %}
+  &lt;/div&gt;
+{% else %}
+  &lt;p&gt;There are no posts in this category.&lt;/p&gt;
+{% endif %}
+&lt;/div&gt;
+
+
+
 
 " />
     
@@ -99,10 +173,10 @@ type: archive
 
 </code></pre>
 </div>
-
+<!-- more -->
 <p><code class="highlighter-rouge">2. Create "post-categories.html" in the _inclues folder folder.</code></p>
 
-<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"entry-categories"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"http://127.0.0.1:4000/webdev/"</span> <span class="na">rel=</span><span class="s">"category"</span><span class="nt">&gt;</span>webdev<span class="nt">&lt;/a&gt;&lt;/span&gt;</span>
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"entry-categories"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"http://ekkodill.github.io/webdev/"</span> <span class="na">rel=</span><span class="s">"category"</span><span class="nt">&gt;</span>webdev<span class="nt">&lt;/a&gt;&lt;/span&gt;</span>
 </code></pre>
 </div>
 
@@ -147,8 +221,6 @@ category-url: fishing
     Written on June 28, 2016   
   </div>
 
-
-<span class="entry-categories post-tag"><a href="http://127.0.0.1:4000/webdev/" rel="category">webdev</a></span>
 
 
 
