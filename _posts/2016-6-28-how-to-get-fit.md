@@ -5,6 +5,7 @@ category: fitness
 category-url: fitness
 ---
 
+
 <h1>Info about lifting</h1>
   <h2>1 - 2 Muskel grupper per dag</h2>
 <p><i>Ikke tren to store muskel grupper på samme dag. F.eks rygg, bryst, skuldre, bein</i></p>
@@ -22,7 +23,7 @@ category-url: fitness
 <p>Løft vekter som er lette nok til at man minst klarer 4 reps, men tunge nok til at man ikke klarer mer enn 6. Dette betyr å klare vekter som er 80-85% av 1RM (one-rep-max)</p>
 <p>Klarer man ikke 4 reps er vekten for tung. Klarer man mer enn 6 er vekten for lett.</p>
 <p>Når man kan klare et SETT med 6 reps skal man legge på vekt på neste set. 2.5kg for dumbbell løft og 5kg for barbell løft. Da burde man klare 4 reps på neste set. Hvis 5kg er for mye (klarer ikke 4 reps) dropp til 2.5kg økning </p>
-
+<!-- more -->
 <h2>6-9 working sets per muskelgruppe</h2>
 <p>"A working set is your heavy 4-6 rep, muscle builing set, as opposed to a warm-up set".</p>
 <h3>PAUSE 2-3 minutt mellom hvert set</h3>

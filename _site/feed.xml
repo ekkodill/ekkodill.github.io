@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.1.6">Jekyll</generator><link href="http://ekkodill.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="http://ekkodill.github.io/" rel="alternate" type="text/html" /><updated>2016-06-28T21:38:52+02:00</updated><id>http://ekkodill.github.io/</id><title>Dr. Who?</title><subtitle>IT Dr. from Somewhere</subtitle><entry><title>How to add categories on jekyll</title><link href="http://ekkodill.github.io/jekyll-categories/" rel="alternate" type="text/html" title="How to add categories on jekyll" /><published>2016-06-28T00:00:00+02:00</published><updated>2016-06-28T00:00:00+02:00</updated><id>http://ekkodill.github.io/jekyll-categories</id><content type="html" xml:base="http://ekkodill.github.io/jekyll-categories/">&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;1. Create &quot;category.html&quot; in the _layouts folder.&lt;/code&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.1.6">Jekyll</generator><link href="http://127.0.0.1:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://127.0.0.1:4000/" rel="alternate" type="text/html" /><updated>2016-07-07T19:49:24+02:00</updated><id>http://127.0.0.1:4000/</id><title>Dr. Who?</title><subtitle>IT Dr. from Somewhere</subtitle><entry><title>How to add categories on jekyll</title><link href="http://127.0.0.1:4000/jekyll-categories/" rel="alternate" type="text/html" title="How to add categories on jekyll" /><published>2016-06-28T00:00:00+02:00</published><updated>2016-06-28T00:00:00+02:00</updated><id>http://127.0.0.1:4000/jekyll-categories</id><content type="html" xml:base="http://127.0.0.1:4000/jekyll-categories/">&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;1. Create &quot;category.html&quot; in the _layouts folder.&lt;/code&gt;&lt;/p&gt;
 
 &lt;div class=&quot;language-liquid highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
 ---
@@ -39,7 +39,7 @@ type: archive
 &lt;!-- more --&gt;
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;2. Create &quot;post-categories.html&quot; in the _inclues folder folder.&lt;/code&gt;&lt;/p&gt;
 
-&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;span&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;entry-categories&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;http://ekkodill.github.io/webdev/&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;category&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;webdev&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;span&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;entry-categories&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;http://127.0.0.1:4000/webdev/&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;category&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;webdev&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
@@ -109,7 +109,293 @@ type: archive
 {% else %}
   &amp;lt;p&amp;gt;There are no posts in this category.&amp;lt;/p&amp;gt;
 {% endif %}
-&amp;lt;/div&amp;gt;</summary></entry><entry><title>How to cut!</title><link href="http://ekkodill.github.io/how-to-get-fit/" rel="alternate" type="text/html" title="How to cut!" /><published>2016-06-28T00:00:00+02:00</published><updated>2016-06-28T00:00:00+02:00</updated><id>http://ekkodill.github.io/how-to-get-fit</id><content type="html" xml:base="http://ekkodill.github.io/how-to-get-fit/">&lt;p&gt;More to come soon!&lt;/p&gt;</content><category term="fitness" /><summary>More to come soon!</summary></entry><entry><title>How to add a project to github!</title><link href="http://ekkodill.github.io/New-git-project/" rel="alternate" type="text/html" title="How to add a project to github!" /><published>2016-06-28T00:00:00+02:00</published><updated>2016-06-28T00:00:00+02:00</updated><id>http://ekkodill.github.io/New-git-project</id><content type="html" xml:base="http://ekkodill.github.io/New-git-project/">&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;1. Create a new repo on github.&lt;/code&gt;&lt;/p&gt;
+&amp;lt;/div&amp;gt;</summary></entry><entry><title>How to get fit!</title><link href="http://127.0.0.1:4000/how-to-get-fit/" rel="alternate" type="text/html" title="How to get fit!" /><published>2016-06-28T00:00:00+02:00</published><updated>2016-06-28T00:00:00+02:00</updated><id>http://127.0.0.1:4000/how-to-get-fit</id><content type="html" xml:base="http://127.0.0.1:4000/how-to-get-fit/">&lt;h1&gt;Info about lifting&lt;/h1&gt;
+&lt;h2&gt;1 - 2 Muskel grupper per dag&lt;/h2&gt;
+&lt;p&gt;&lt;i&gt;Ikke tren to store muskel grupper på samme dag. F.eks rygg, bryst, skuldre, bein&lt;/i&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    En stor muskel gruppe f.eks bryst
+  &lt;/li&gt;
+  &lt;li&gt;En stor muskelgruppe og en liten f.eks rygg og mage&lt;/li&gt;
+  &lt;li&gt;Eller to små muskelgrupper som f.eks biceps og triceps&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;4-6 reps for nesten alle løft&lt;/h2&gt;
+&lt;p&gt;For maks muskelvekst gjøres 4-6 reps per set på nesten alle øvelser. Unntak for mage og legger hvor anbefalt å løfte vekter med 10-10 reps&lt;/p&gt;
+&lt;h3&gt;Hva betry 4-6?&lt;/h3&gt;
+&lt;p&gt;Løft vekter som er lette nok til at man minst klarer 4 reps, men tunge nok til at man ikke klarer mer enn 6. Dette betyr å klare vekter som er 80-85% av 1RM (one-rep-max)&lt;/p&gt;
+&lt;p&gt;Klarer man ikke 4 reps er vekten for tung. Klarer man mer enn 6 er vekten for lett.&lt;/p&gt;
+&lt;p&gt;Når man kan klare et SETT med 6 reps skal man legge på vekt på neste set. 2.5kg for dumbbell løft og 5kg for barbell løft. Da burde man klare 4 reps på neste set. Hvis 5kg er for mye (klarer ikke 4 reps) dropp til 2.5kg økning &lt;/p&gt;
+&lt;!-- more --&gt;
+&lt;h2&gt;6-9 working sets per muskelgruppe&lt;/h2&gt;
+&lt;p&gt;&quot;A working set is your heavy 4-6 rep, muscle builing set, as opposed to a warm-up set&quot;.&lt;/p&gt;
+&lt;h3&gt;PAUSE 2-3 minutt mellom hvert set&lt;/h3&gt;
+&lt;p&gt;Muskler trenger pause for å kunne løfte max vekt i neste set&lt;/p&gt;
+&lt;p&gt;Det viktiste er at man klarer å løfte max vekt i hvert sett. trenger man bare 2min er det greit, 3 eller mer er også greit. Men ikke dra ut til 5-6 min eller mer&lt;/p&gt;
+&lt;h2&gt;Tren i 45-60 minutt&lt;/h2&gt;
+&lt;p&gt;Varer økten mer en 45min gjør man noe galt. De skal aldri ta mer enn 1 time&lt;/p&gt;
+&lt;h2&gt;Tren hver muskelgruppe en gang hver 5 - 7 dager&lt;/h2&gt;
+&lt;p&gt;Hver muskelgruppe trenger nok pause før den trenes igjen for at den skal kunne gro optimalt&lt;/p&gt;
+&lt;h2&gt;Ta en uke pause fra trening hver 8 - 10. uke&lt;/h2&gt;
+&lt;p&gt;Ikke noe vektløfting og ikke tung cardio.&lt;/p&gt;
+&lt;p&gt;Etter en uke av kan man føle seg svakere og kan da prøve en &quot;De-load uke&quot;&lt;/p&gt;
+&lt;h2&gt;De-loading&lt;/h2&gt;
+&lt;p&gt;Normal trening med 9 tunge set, 6 lette sett med 40-50% av normal vekt og ikke gå til failure. 8 - 10 reps hvert set&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;h1&gt;HUSK!!! Perfekt form, Tunge vekter!! MAX 6 REPS!!&lt;/h1&gt;
+&lt;hr /&gt;
+
+&lt;h2&gt;REP timing -  2-1-2&lt;/h2&gt;
+&lt;p&gt;Timing på å løft og senking av vekter&lt;/p&gt;
+&lt;p&gt;Første del av reppen burde ta 2 sekunder. Så 1 sekund pause, fulgt av resten av reppen på 2 sekund&lt;/p&gt;
+&lt;p&gt;&lt;i&gt;Eks benkpress: 2 sekund på å senke. 1 sekund pause, 2 sekund på å løfte&lt;/i&gt;&lt;/p&gt;
+&lt;h2&gt;CARDIO&lt;/h2&gt;
+&lt;p&gt;Det er bevist at kardio ikke ødlegger for muskelvekst eller mulighet for det sålenge det gjøres korrekt. Og må være en del av treningen&lt;/p&gt;
+&lt;h3&gt;De værste cardio feilene man kan gjøre&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;Gjøre cardio rett før eller etter vektløfting&lt;/li&gt;		
+&lt;/ol&gt;
+&lt;h3&gt;Hvordan gjøre cardio riktig&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;3-5 ganger i uka basert på egne mål&lt;/li&gt;
+  &lt;p&gt;Hvir man bulker, 3 dager med cardio i uka. Øker muskelvekst og minimere fettlagring&lt;/p&gt;
+  &lt;li&gt;Gjør HIIT cardio (Høy intensitets interval trening) 20 - 30 minutter per økt&lt;/li&gt;
+  &lt;p&gt;Lange, lav intensitets cardio økter har en tendens til å hindre muskelvekst og brenne færre kalorier som gjør dem inefektive når det kommer til fett tap.&lt;/p&gt;
+&lt;/ol&gt;
+&lt;h3&gt;HIIT oppskrift&lt;/h3&gt;
+&lt;ol&gt;
+    &lt;li&gt;Start med 2-3min lav intensitets oppvarming&lt;/li&gt;
+    &lt;li&gt;Gå all ut så hardt som muli i 1 minutt&lt;/li&gt;
+    &lt;li&gt;Ro ned til lav intensitet i 1 minutt&lt;/li&gt;
+    &lt;li&gt;Repeter dette i 20-30 min.&lt;/li&gt;
+    &lt;li&gt;De 2-3 siste minuttene gjøres for nedkjøling på lav intensitet&lt;/li&gt;
+  &lt;/ol&gt;
+&lt;p&gt;Vektløfting og cardio trening må være separert med flere timer. Minimum 2-3 timer, jo mer jo ber&lt;/p&gt;
+&lt;h1&gt;Øvelser og proper form&lt;/h1&gt;
+&lt;h2&gt;Squat&lt;/h2&gt;
+&lt;p&gt;Føtter skulder vidde, tær pek mot 11 og 1&lt;/p&gt;
+&lt;p&gt;Stan posisjon på rygg&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;img/squatbarpos.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Se ned på et punkt på gulvet 2 meter foran&lt;/p&gt;
+&lt;p&gt;Sett deg ned. hold bryst opp og rygg rett og stram&lt;/p&gt;
+&lt;p&gt;Knær skal ikke gå lengre frem enn rett foran tær&lt;/p&gt;
+&lt;p&gt;Når knær er ute av veien handler det bare om en bevegelse rett ned med hoftene og et rett løft av hoftene&lt;/p&gt;
+&lt;p&gt;Når man sitter nederst vil stangen være midt over føttene.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;img/squatdown.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Venstre er form for &quot;front-squat&quot;, midten er form for &quot;high-bar&quot; squat, og høyre er &quot;low-bar&quot; squat som er anbefalt&lt;/p&gt;
+&lt;p&gt;På vei opp skal rompa rett opp og skuldrene må følge i samme fart, da må ryggen være i vinkel slik at stanga er over midten av foten&lt;/p&gt;
+&lt;p&gt;For rask reising av hofter kan føre til at man tipper fremover&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;img/squattipping.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Kjør hoftene rett opp og ikke tenk på noe annet, hold brystet opp og ryggen rett.&lt;/p&gt;
+&lt;h2&gt;Benkpress&lt;/h2&gt;
+&lt;p&gt;Klem skuldre sammen før man går i posisjon. Hold ryggen klemt og nede for hele løftet.&lt;/p&gt;
+&lt;p&gt;En liten bøy i ryggen for å kunne få plass til en knytteneve mellom benk og nedre del av ryggen&lt;/p&gt;
+&lt;p&gt;Løft brystet som om du skal vise det til noen og hold det oppe under hele løftet&lt;/p&gt;
+&lt;p&gt;Grep litt breiere enn skuldervidde&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;img/benchpress.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Løft helt ned til brystet og rett opp&lt;/p&gt;
+&lt;h2&gt;Incline benkpress&lt;/h2&gt;
+&lt;p&gt;Benk med 30-45 graders hellning&lt;/p&gt;
+&lt;p&gt;Stangen skal passere haka og berøre rett under collarbones. Dette vil gjøre løftet vertikalt med stangen&lt;/p&gt;
+&lt;h2&gt;Close-grip benchpress&lt;/h2&gt;
+&lt;p&gt;Close grip benkpress er bra for triceps&lt;/p&gt;
+&lt;p&gt;Utføres helt likt som vanlig benkpress men med litt smalere grep.&lt;/p&gt;
+&lt;p&gt;Gjør det vondt i håndledd øk bredden med en fingerbredde av gangen&lt;/p&gt;
+&lt;h2&gt;The deadlift&lt;/h2&gt;
+&lt;p&gt;Litt smalere stance enn skulderbredde, tær peker litt ut&lt;/p&gt;
+&lt;p&gt;stangen over midten av føttene&lt;/p&gt;
+&lt;p&gt;bøy deg med midjen&lt;/p&gt;
+&lt;p&gt;Armene rett på utsiden av beina, med nok plass for at tommlene klarerer hoftene&lt;/p&gt;
+&lt;p&gt;Bøy gjennom knærene til leggen berører stangen, da løfter du brystet til ryggen er i naturlig posisjon og stram. Albuer skal være helt rette&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;img/deadliftpickup.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Så er man klar til å løfte. Pust godt inn og se fremover og start bevegelsen oppover. Med og bruke quads for å starte retting av knærne.  &lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;img/deadlifting.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Stangen skal flytte seg opp over leggene og rulle over knærne og hofta, på toppen skal brystet ut og skuldrene ned. ikke len tilbake&lt;/p&gt;
+&lt;p&gt;Neste er å senke vekten helt tilbake på gulvet.&lt;/p&gt;
+&lt;p&gt;På samme måte som opp bare motsatt. Start med å senke stangen ved å dytte hofta bak, og la stangen gå rett ned til den når knærne. Så bøyer man knærne og senker stangen ned over leggene mens ryggen er i en stram og naturlig posisjon hele tiden.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;img/deadliftingdown.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Eksploder stangen så fort du kan fra bakken&lt;/p&gt;
+&lt;h2&gt;Romanian deadlift&lt;/h2&gt;
+&lt;p&gt;Også kalt RDL treffer glutes, hamstring og minimerer bruk av quads og hofter&lt;/p&gt;
+
+&lt;h1&gt;Oppvarming&lt;/h1&gt;
+&lt;h3&gt;Første sett&lt;/h3&gt;
+&lt;p&gt;12 reps med 50% av &quot;heavy set weight&quot;. 1 min pause. Ikke hast.&lt;/p&gt;
+&lt;p&gt;Eks. Hvis man gjør 3 sets av 5 med 275 på benkpress sist uke, start oppvarming med 135 pounds og gjør 12 reps med 1 min pause&lt;/p&gt;
+&lt;h3&gt;Andre sett&lt;/h3&gt;
+&lt;p&gt;Samme vekt som første og 10 reps, litt raskere. 1 min pause&lt;/p&gt;
+&lt;h3&gt;Tredje sett&lt;/h3&gt;
+&lt;p&gt;4 reps 70% av &quot;heavy weight&quot;, moderat fart. skal enda føles lett. &lt;/p&gt;
+&lt;p&gt;Med &quot;heavy weight&quot; på 275, vil dette sette bli 180-185 pounds. 1 min pause&lt;/p&gt;
+&lt;h3&gt;Fjerde sett&lt;/h3&gt;
+&lt;p&gt;Siste oppvarmingssett. 1 rep med 90% av heavy weight. Så 2-3 min før start med full vekt set&lt;/p&gt;
+&lt;h3&gt;5 - 6 - 7 Sett&lt;/h3&gt;
+&lt;p&gt;De forrige var bare oppvarmingssett. Disse 3 settene er med full vekt&lt;/p&gt;
+&lt;h2&gt;Neste øvelse&lt;/h2&gt;
+&lt;p&gt;Går man til noe som incline dumbbell press fra benkpress trenger man ikke gå &lt;/p&gt;
+
+&lt;h1&gt;Treningsrutine&lt;/h1&gt;
+&lt;h3&gt;Eks 1&lt;/h3&gt;
+&lt;p&gt;Mandag - fredag Løfte vekter&lt;/p&gt;
+&lt;p&gt;Lørdag - ingen trening&lt;/p&gt;
+&lt;p&gt;Søndag - tirsdag/onsdag cardio&lt;/p&gt;
+&lt;h3&gt;Eks 2&lt;/h3&gt;
+&lt;p&gt;Day 1: Løfte vekter &amp;amp; cardio&lt;/p&gt;
+&lt;p&gt;Day 2: løfte&lt;/p&gt;
+&lt;p&gt;Day 3: cardio&lt;/p&gt;
+&lt;p&gt;Day 4: løfte &amp;amp; cardio&lt;/p&gt;
+&lt;p&gt;Day 5: løfte &amp;amp; cardio&lt;/p&gt;
+&lt;p&gt;Day 6: full pause&lt;/p&gt;
+&lt;p&gt;Day 7: løfte&lt;/p&gt;
+&lt;h2&gt;Øvelser&lt;/h2&gt;
+&lt;h3&gt;Day 1 - chest and abs&lt;/h3&gt;
+&lt;ul&gt;
+    &lt;li&gt;Benkpress - oppvarming sets og så 3 &quot;working sets&quot; 4-6 reps per set&lt;/li&gt;
+    &lt;li&gt;Incline benchpress - 3 workings sets 4-6 reps per set&lt;/li&gt;
+    &lt;li&gt;Weighted dip - 3 working sets 4-6 reps&lt;/li&gt;
+    &lt;li&gt;cable crunch 3 sets nok vekt for 10-12 reps per set&lt;/li&gt;
+    &lt;li&gt;captains chair leg raise - ingen vekt så mange man klarer 3 sets&lt;/li&gt;
+    &lt;li&gt;bicyles - ingen vekt så mange man klarer 3 sets&lt;/li&gt;
+    &lt;hr /&gt;
+    &lt;li&gt;Alternativer&lt;/li&gt;
+    &lt;li&gt;Incline dumbell press, flat dumbbell press, weighted dip&lt;/li&gt;
+    &lt;li&gt;flat bench press, incline benchpress, flat dumbbell press&lt;/li&gt;
+    &lt;li&gt;Hanging Knee Raise&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;h3&gt;Day 2 - back&lt;/h3&gt;
+&lt;ul&gt;
+    &lt;li&gt;Barbell deadlift - oppvarmings set og 3 working sets&lt;/li&gt;
+    &lt;li&gt;one arm dumbell row - 3 working sets&lt;/li&gt;
+    &lt;li&gt;close grip lat pulldown - 3 working sets&lt;/li&gt;
+    &lt;li&gt;seated or standing calf raise - 6 working sets nok vekt til å bare kunne gjøre 10-12 reps per set&lt;/li&gt;
+    &lt;hr /&gt;
+    &lt;li&gt;Alternativer&lt;/li&gt;
+    &lt;li&gt;Barbell deadlift, tbar row og one arm dumbbell row&lt;/li&gt;
+    &lt;li&gt;barbell deadlift, bent over barbell row, close -grip pulldown&lt;/li&gt;
+    &lt;li&gt;barbell deadlift, front lat pulldown, weighted pull-up&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;h3&gt;Day 3 - shoulders&lt;/h3&gt;
+&lt;ul&gt;
+    &lt;li&gt;Seated barbell military press - oppvarming sets + 3 working sets&lt;/li&gt;
+    &lt;li&gt;side lateral raise - 3 working sets&lt;/li&gt;
+    &lt;li&gt;bent over rear delt raise - 3 working sets&lt;/li&gt;
+    &lt;li&gt;barbell shrugs - 3 working sets&lt;/li&gt;
+    &lt;hr /&gt;
+    &lt;li&gt;Alternativer&lt;/li&gt;
+    &lt;li&gt;Seated barbell military press, side lateral raise og bent over rear delt raise&lt;/li&gt;
+    &lt;li&gt;Seated barbell military press, dumbbell front raise, side lateral raise, seated rear delt raise&lt;/li&gt;
+    &lt;li&gt;Seated dumbbell (or arnold) press, side lateral raise, seated rear dealt raise&lt;/li&gt;
+    &lt;li&gt;Side 138 i boka&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;h3&gt;Day 4 - legs&lt;/h3&gt;
+&lt;ul&gt;
+    &lt;li&gt;Barbell squat - oppvarming set + 3 working set&lt;/li&gt;
+    &lt;li&gt;leg press - 3 working set&lt;/li&gt;
+    &lt;li&gt;romanian deadlift - 3 working set&lt;/li&gt;
+    &lt;hr /&gt;
+    &lt;li&gt;Alternativer&lt;/li&gt;
+    &lt;li&gt;Barbell squat, hack squat eller leg press og romanian deadlift eller leg curl&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;h3&gt;Day 5 - Arms and abs&lt;/h3&gt;
+&lt;ul&gt;
+    &lt;li&gt;Dumbbell curl oppvarming og 3 working sets&lt;/li&gt;
+    &lt;li&gt;tricpes pushdown - oppvarming og 3 working sets&lt;/li&gt;
+    &lt;li&gt;barbell curl 3 working sets&lt;/li&gt;
+    &lt;li&gt;seated triceps press - 3 working sets&lt;/li&gt;
+    &lt;li&gt;cable crunch 3sets&lt;/li&gt;
+    &lt;li&gt;captains chair leg raise 3sets&lt;/li&gt;
+    &lt;li&gt;bicycles 3sets&lt;/li&gt;
+    &lt;p&gt;For å kutte tiden: bicep trening, pause 1-2min, tricpe øvelse og så mage uten pause, så 1-2min pause tilbake til bicep øvelse osv.&lt;/p&gt;
+    &lt;hr /&gt;
+    &lt;li&gt;Alternativer&lt;/li&gt;
+    &lt;li&gt;Biceps: barbell curl, straight bar  curl or dumbbell curl and hammer curl&lt;/li&gt;
+    &lt;li&gt;Triceps: close-grip benchpress og seated tricpes press&lt;/li&gt;
+    &lt;li&gt;weighted dip og tricpes pushdown&lt;/li&gt;
+    &lt;li&gt;close-grip benchpress og weighted dip&lt;/li&gt;
+    &lt;li&gt;Abs: Abs roller or decline crunch&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;h1&gt;Suplements&lt;/h1&gt;
+&lt;ul&gt;
+    &lt;li&gt;Protein shake - før og etter trening&lt;/li&gt;
+    &lt;li&gt;Creatine - Første uke: 20-25 gram per dag, delt på 2-4 serveringer. 5gram før trening, 5 gram etter, 5gram til middag, 5 gram i en shake, 5 gram i siste shake. Etter første uke, reduser til 5-10 gram per dag. Første gang man bruker start med 5gram per dag, merker man ikke noe styrke increase øk til 10gram. 5gram før trening, 5gram etter&lt;/li&gt;
+    &lt;li&gt;Glutamine. 5-10gram før trening, 5-10gram rett etter trening\i post workout shake, og 5-10gram rett før sengs&lt;/li&gt;
+    &lt;li&gt;Multivitamin&lt;/li&gt;
+    &lt;li&gt;Grønn te extract 400-600 mg of catechins per dag, tas på tom mage&lt;/li&gt;
+    &lt;li&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;h1&gt;Cheat sheet&lt;/h1&gt;
+&lt;pre&gt;
+    Here’s a simple “cheat sheet” that lays out the key principles of the Bigger
+Leaner Stronger program.
+• Make sure you start each workout with a proper warm up routine:
+ In your first warm-up set, you want to do 12 reps with about 50 percent
+of your heavy, 4- to 6-rep set weight and then rest for 1 minute.
+ In your second warm-up set, you use the same weight as the first and do
+10 reps this time at a little faster pace. Then rest for 1 minute.
+ Your third warm-up set is 4 reps with about 70 percent of your heavy
+weight, and it should be done at a moderate pace. Once again, you follow
+this set with a 1-minute rest.
+ The fourth warm-up set is the final one and it’s simple: 1 rep with about
+90 percent of your heavy weight. Rest 2 to 3 minutes after this final
+warm-up set.
+• Most of your working sets are done in the 4 to 6 rep range (about 85% of
+your 1RM).
+• Some workouts call for sets in the 8 to 10 rep range.
+• Do the workouts one exercise at a time, in the order given.
+• Rest 3 to 4 minutes in between sets done in the 4 to 6 rep range.
+• Rest 1 to 2 minutes in between sets done in the 8 to 10 rep range.
+Once you reach the top of your rep range for one set, add weight. The
+standard increase is a total of 10 pounds: 5 pounds added to either side of
+the barbell or a 5-pound increase in each dumbbell.
+• Use either the “2–1–2” or “2–1–1” timing for your reps. This means the first
+part of the rep should take about 2 seconds, which is followed by a 1-second
+(or shorter) pause, which is followed by the final portion of the rep, which
+should take between 1 and 2 seconds.
+• When your workout calls for an “Abs Circuit,” do the following:
+ Do a set of a weighted exercise like the cable crunch, captain’s chair leg
+raise, or hanging leg raise for 10 to 12 reps (you can add weight to the
+latter two by snatching a dumbbell in between your feet).
+ Go directly into 1 set of an unweighted exercise, to failure.
+ Go directly into 1 set of an unweighted exercise, to failure.
+ Rest 2 to 3 minutes.
+• When doing calf exercises point your toes forward for the first set. For the
+second, point them slightly out (about 20 degrees). For the third set, point
+them slightly inward. Repeat for the next 3 sets.
+• This journal calls for a Strength Week every four weeks of training. In this
+week, you will follow a more traditional strength training layout, which has
+you perform the same exercises several times in the week but has you do
+fewer sets each workout.
+ I recommend that you rest at least one day in between your Strength
+Week workouts. Many people like to train on Mondays, Wednesdays, and
+Fridays.
+ Your Strength Week working sets should be done with the same weight
+as your working sets in your normal workouts. For example, if, in your
+last back workout, you deadlifted 225 pounds for sets of 5, 4, and 4 reps,
+you use 225 pounds for your deadlifts on your Strength Week.
+ You progress in your strength workouts in the same way as your normal
+workouts—once you get six reps, add five to ten pounds to the bar and
+continue working with that weight.
+ Rest the normal three to four minutes in between sets.
+ You can continue doing cardio (or not) as usual.
+  &lt;/pre&gt;</content><category term="fitness" /><summary>Info about lifting
+1 - 2 Muskel grupper per dag
+Ikke tren to store muskel grupper på samme dag. F.eks rygg, bryst, skuldre, bein
+
+  
+    En stor muskel gruppe f.eks bryst
+  
+  En stor muskelgruppe og en liten f.eks rygg og mage
+  Eller to små muskelgrupper som f.eks biceps og triceps
+
+
+4-6 reps for nesten alle løft
+For maks muskelvekst gjøres 4-6 reps per set på nesten alle øvelser. Unntak for mage og legger hvor anbefalt å løfte vekter med 10-10 reps
+Hva betry 4-6?
+Løft vekter som er lette nok til at man minst klarer 4 reps, men tunge nok til at man ikke klarer mer enn 6. Dette betyr å klare vekter som er 80-85% av 1RM (one-rep-max)
+Klarer man ikke 4 reps er vekten for tung. Klarer man mer enn 6 er vekten for lett.
+Når man kan klare et SETT med 6 reps skal man legge på vekt på neste set. 2.5kg for dumbbell løft og 5kg for barbell løft. Da burde man klare 4 reps på neste set. Hvis 5kg er for mye (klarer ikke 4 reps) dropp til 2.5kg økning</summary></entry><entry><title>How to add a project to github!</title><link href="http://127.0.0.1:4000/New-git-project/" rel="alternate" type="text/html" title="How to add a project to github!" /><published>2016-06-28T00:00:00+02:00</published><updated>2016-06-28T00:00:00+02:00</updated><id>http://127.0.0.1:4000/New-git-project</id><content type="html" xml:base="http://127.0.0.1:4000/New-git-project/">&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;1. Create a new repo on github.&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;2. git init&lt;/code&gt;&lt;/p&gt;
 
@@ -137,4 +423,4 @@ type: archive
 
 7. git pull &quot;repo project url&quot;
 
-8. git push github master</summary></entry><entry><title>How to do what?</title><link href="http://ekkodill.github.io/How-to-world/" rel="alternate" type="text/html" title="How to do what?" /><published>2016-06-28T00:00:00+02:00</published><updated>2016-06-28T00:00:00+02:00</updated><id>http://ekkodill.github.io/How-to-world</id><content type="html" xml:base="http://ekkodill.github.io/How-to-world/">&lt;p&gt;How to do whatever i need to know.&lt;/p&gt;</content><summary>How to do whatever i need to know.</summary></entry></feed>
+8. git push github master</summary></entry><entry><title>How to do what?</title><link href="http://127.0.0.1:4000/How-to-world/" rel="alternate" type="text/html" title="How to do what?" /><published>2016-06-28T00:00:00+02:00</published><updated>2016-06-28T00:00:00+02:00</updated><id>http://127.0.0.1:4000/How-to-world</id><content type="html" xml:base="http://127.0.0.1:4000/How-to-world/">&lt;p&gt;How to do whatever i need to know.&lt;/p&gt;</content><summary>How to do whatever i need to know.</summary></entry></feed>
