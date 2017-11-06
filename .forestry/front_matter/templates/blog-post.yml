@@ -1,0 +1,15 @@
+---
+hide_body: false
+fields:
+- type: text
+  label: layout
+  name: layout
+- type: text
+  name: title
+  label: title
+- type: text
+  name: category
+  label: category
+- type: text
+  name: category-url
+  label: category-url
