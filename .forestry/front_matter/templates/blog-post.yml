@@ -1,4 +1,6 @@
 ---
+pages:
+- _posts/testing-forestry-cms.md
 hide_body: false
 fields:
 - type: text
